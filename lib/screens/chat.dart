@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
-import '../widgets/bottomNavbar.dart'; // pastikan nama file-nya benar
+import '../widgets/bottomNavbar.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -50,7 +50,7 @@ class ChatScreen extends StatelessWidget {
               ),
             ),
 
-            // Search bar
+            // Search Bar
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: TextField(
@@ -76,13 +76,16 @@ class ChatScreen extends StatelessWidget {
 
             const SizedBox(height: 16),
 
-            // Chat list
+            // Chat List
             Expanded(
               child: ListView.builder(
                 itemCount: chats.length,
                 itemBuilder: (context, index) {
                   final chat = chats[index];
                   return ListTile(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/roomchat');
+                    },
                     leading: Container(
                       width: 40,
                       height: 40,
@@ -135,8 +138,8 @@ class ChatScreen extends StatelessWidget {
         ),
       ),
 
-      // ✅ BOTTOM NAVIGATION BAR
-      bottomNavigationBar:  BottomNavBar(
+      // Bottom Navbar
+      bottomNavigationBar: BottomNavBar(
         currentIndex: 0,
         onTap: (index) {
           if (index == 0) return;
