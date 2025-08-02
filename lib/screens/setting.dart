@@ -91,11 +91,26 @@ class SettingsScreen extends StatelessWidget {
             // Settings menu
             const _SettingsItem(title: 'Saved Messages'),
             const _SettingsItem(title: 'Recent Calls'),
-            const _SettingsItem(title: 'Devices'),
-            const _SettingsItem(title: 'Notifications'),
-            const _SettingsItem(title: 'Appearance'),
-            const _SettingsItem(title: 'Language'),
-            const _SettingsItem(title: 'Privacy & Security'),
+            const _SettingsItem(
+              title: 'Devices',
+              isFeedback: true,
+              ),
+            _SettingsItem(
+              title: 'search',
+              isSearch :true,
+            ),
+            _SettingsItem(
+              title: 'Map',
+              isMap : true
+              ),
+           _SettingsItem(
+            title: 'Event',
+            isEvent : true,
+            ),
+            _SettingsItem(
+              title: 'Ecomerce',
+              isEcomerce : true,
+              ),
             _SettingsItem(
               title: 'Projects',
               isProjects :true,
@@ -116,6 +131,8 @@ class SettingsScreen extends StatelessWidget {
             Navigator.pushReplacementNamed(context, '/friends');
           } else if (index == 2) {
             // Already on settings
+          } else if (index == 3) {
+            Navigator.pushReplacementNamed(context, '/exploreEcomerce');
           }
         },
       ),
@@ -128,9 +145,20 @@ class _SettingsItem extends StatelessWidget {
   final String title;
   final bool isLogout;
   final bool isProjects;
+  final bool isEcomerce;
+  final bool isEvent;
+  final bool isMap;
+  final bool isSearch;
+  final bool isFeedback;
+
   const _SettingsItem({required this.title,
    this.isLogout = false,
     this.isProjects = false,
+    this.isEcomerce = false,
+    this.isEvent = false,
+    this.isMap = false,
+    this.isSearch = false,
+    this.isFeedback = false,
    });
 
   @override
@@ -152,6 +180,21 @@ class _SettingsItem extends StatelessWidget {
         
         } else if (isProjects) {
           Navigator.pushNamed(context, '/projects');
+
+        } else if (isEcomerce) {
+          Navigator.pushNamed(context, '/exploreEcomerce');
+      
+        } else if (isEvent) {
+          Navigator.pushNamed(context, '/event');
+        
+        } else if (isMap) {
+          Navigator.pushNamed(context, '/map');
+
+        } else if (isSearch) {
+          Navigator.pushNamed(context, '/search');
+
+        } else if (isFeedback) {
+          Navigator.pushNamed(context, '/feedback');
         }
       },
     );

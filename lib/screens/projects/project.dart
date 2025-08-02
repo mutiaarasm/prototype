@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prototype/widgets/bottonNavbarProject.dart';
-import '../constants/app_colors.dart';
-import '../widgets/primary_button.dart';
+import '../../constants/app_colors.dart';
+import '../../widgets/primary_button.dart';
 
 class ProjectsScreen extends StatelessWidget {
   const ProjectsScreen({super.key});

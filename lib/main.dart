@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:prototype/screens/chat.dart';
+import 'package:prototype/screens/event/event.dart';
+import 'package:prototype/screens/ecomerce/explore_ecomerce.dart';
+import 'package:prototype/screens/map/map.dart';
 import 'package:prototype/screens/onboarding.dart';
-import 'package:prototype/screens/project.dart';
+import 'package:prototype/screens/projects/project.dart';
 import 'package:prototype/screens/roomChat.dart';
 import 'package:prototype/screens/personalize.dart';
+import 'package:prototype/screens/search/search.dart';
 import 'package:prototype/screens/setting.dart';
 
 void main() {
@@ -24,6 +28,12 @@ class MyApp extends StatelessWidget {
         '/roomchat': (context) => const RoomChatScreen(),
         '/settings': (context) => const SettingsScreen(),
         '/projects': (context) => const ProjectsScreen(),
+        '/exploreEcomerce': (context) => const ExploreEcomerce(),
+        '/event': (context) => const EventsScreen(),
+        '/search': (context) => const SearchScreen(),
+        '/event': (context) => const EventsScreen(),
+        '/map': (context) => const MapScreen(),
+
       },
     );
   }

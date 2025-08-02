@@ -190,7 +190,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       (Set<MaterialState> states) {
                         if (states.contains(MaterialState.selected)) {
                           return AppColors.blue; // biru saat dicentang
-                        }
+                        } 
                         return Colors.white; // putih saat kosong
                       },
                     ),

@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Icon(
                     Icons.image,
                     size: 48,
-                    color: Colors.grey,
+                    color: AppColors.lightestblue,
                   ),
                 ),
               ),
