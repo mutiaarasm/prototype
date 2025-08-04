@@ -14,48 +14,51 @@ class InterestCheckbox extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 6),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        decoration: BoxDecoration(
-          color: isSelected ? const Color(0xFFE8F0FE) : Colors.white, // 
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: isSelected ? Colors.transparent : AppColors.border,
-            width: 2,
-          ),
+ Widget build(BuildContext context) {
+  return GestureDetector(
+    onTap: onTap,
+    child: Container(
+      margin: const EdgeInsets.symmetric(vertical: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      decoration: BoxDecoration(
+        color: isSelected ? const Color(0xFFE8F0FE) : Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          color: isSelected ? Colors.transparent : AppColors.border,
+          width: 2,
         ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.black,
-                  ),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              title,
+              style: const TextStyle(
+                fontSize: 16,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.w400,
+                color: AppColors.black,
               ),
             ),
-            if (isSelected)
-              Container(
+          ),
+          // ✅ Gunakan ternary expression
+          isSelected
+            ? const SizedBox(
                 width: 28,
                 height: 28,
-                child: const Center(
+                child: Center(
                   child: Icon(
                     Icons.check,
                     size: 18,
-                    color: AppColors.blue, // warna check biru
+                    color: AppColors.blue,
                   ),
                 ),
-              ),
-          ],
-        ),
+              )
+            : const SizedBox(width: 28, height: 28),
+
+        ],
       ),
-    );
-  }
+    ),
+  );
+} 
 }

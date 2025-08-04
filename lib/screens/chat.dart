@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
-import '../widgets/bottomNavbar.dart';
+import '../widgets/bottom_navbar.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});

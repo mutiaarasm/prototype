@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prototype/screens/ecomerce/cart.dart';
 import 'package:prototype/screens/ecomerce/detail_product.dart';
 import 'package:prototype/screens/ecomerce/search_produk.dart';
-import 'package:prototype/widgets/bottomNavbarEcomerce.dart';
+import 'package:prototype/widgets/bottom_navbar_ecomerce.dart';
 import '../../constants/app_colors.dart';
 
 class ExploreEcomerce extends StatelessWidget {
@@ -157,7 +157,7 @@ class ProductCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
-          boxShadow: [BoxShadow(color: Colors.black12.withOpacity(0.05), blurRadius: 8)],
+          boxShadow: [BoxShadow(color: Colors.black12.withValues(alpha: 128), blurRadius: 8)],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

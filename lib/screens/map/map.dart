@@ -27,8 +27,8 @@ Widget build(BuildContext context) {
           padding: const EdgeInsets.only(top: 100), // supaya tidak nutupi header
           child: FlutterMap(
             options: MapOptions(
-              center: _center,
-              zoom: 13,
+              initialCenter: _center,
+              initialZoom: 13,
               onTap: (_, __) {
                 setState(() => showPropertyInfo = false);
               },

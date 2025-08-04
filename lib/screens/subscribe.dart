@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prototype/screens/login.dart';
 import '../constants/app_colors.dart';
 import '../widgets/primary_button.dart';
-import '../widgets/subscribeplan.dart';
+import '../widgets/subscribe_plan.dart';
 
 class SubscriptionScreen extends StatefulWidget {
   const SubscriptionScreen({super.key});
@@ -125,7 +125,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               PrimaryButton(
                 text: 'Subscribe',
                 onPressed: () {
-                  print('Selected plan: $selectedPlan');
+                  debugPrint('Selected plan: $selectedPlan');
 
                   Navigator.push(
                     context,

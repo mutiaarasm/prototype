@@ -186,9 +186,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       color: AppColors.lightGrey,
                       width: 1.1,
                     ),
-                    fillColor: MaterialStateProperty.resolveWith<Color>(
-                      (Set<MaterialState> states) {
-                        if (states.contains(MaterialState.selected)) {
+                    fillColor: WidgetStateProperty.resolveWith<Color>(
+                      (Set<WidgetState> states) {
+                        if (states.contains(WidgetState.selected)) {
                           return AppColors.blue; // biru saat dicentang
                         } 
                         return Colors.white; // putih saat kosong

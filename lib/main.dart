@@ -5,8 +5,7 @@ import 'package:prototype/screens/ecomerce/explore_ecomerce.dart';
 import 'package:prototype/screens/map/map.dart';
 import 'package:prototype/screens/onboarding.dart';
 import 'package:prototype/screens/projects/project.dart';
-import 'package:prototype/screens/roomChat.dart';
-import 'package:prototype/screens/personalize.dart';
+import 'package:prototype/screens/room_chat.dart';
 import 'package:prototype/screens/search/search.dart';
 import 'package:prototype/screens/setting.dart';
 
@@ -31,7 +30,6 @@ class MyApp extends StatelessWidget {
         '/exploreEcomerce': (context) => const ExploreEcomerce(),
         '/event': (context) => const EventsScreen(),
         '/search': (context) => const SearchScreen(),
-        '/event': (context) => const EventsScreen(),
         '/map': (context) => const MapScreen(),
 
       },
