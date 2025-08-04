@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/screens/onboarding.dart';
 import 'package:prototype/screens/subscribe.dart';
 import 'package:prototype/widgets/chekbox.dart';
 import 'package:prototype/widgets/progress_bar.dart';
@@ -82,7 +81,7 @@ class _PersonalizeScreenState extends State<PersonalizeScreen> {
               PrimaryButton(
                 text: 'Next',
                 onPressed: () {
-                  print('Selected: $selectedInterests');
+                  debugPrint('Selected: $selectedInterests');
 
                   Navigator.push(
                     context,

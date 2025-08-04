@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/screens/Register.dart';
+import 'package:prototype/screens/register.dart';
 import '../constants/app_colors.dart';
 import '../widgets/primary_button.dart';
-import '../widgets/socialButton.dart';
+import '../widgets/social_button.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

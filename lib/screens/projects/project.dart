@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:prototype/widgets/bottonNavbarProject.dart';
+import 'package:prototype/widgets/botton_navbar_project.dart';
 import '../../constants/app_colors.dart';
 import '../../widgets/primary_button.dart';
 

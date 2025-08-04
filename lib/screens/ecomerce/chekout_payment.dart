@@ -170,9 +170,9 @@ class _CheckoutPaymentScreenState extends State<CheckoutPaymentScreen> {
                           color: AppColors.lightGrey, // outline warna abu saat kosong
                           width: 1.1,
                         ),
-                        fillColor: MaterialStateProperty.resolveWith<Color>(
-                          (Set<MaterialState> states) {
-                            if (states.contains(MaterialState.selected)) {
+                        fillColor: WidgetStateProperty.resolveWith<Color>(
+                          (Set<WidgetState> states) {
+                            if (states.contains(WidgetState.selected)) {
                               return AppColors.blue; // biru saat dicentang
                             }
                             return Colors.white; // putih saat kosong

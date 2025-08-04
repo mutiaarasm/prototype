@@ -40,13 +40,6 @@ class _SearchResultPageState extends State<SearchResultPage> {
     });
   }
 
- void _FilterPage() {
-  Navigator.push(
-    context,
-    MaterialPageRoute(builder: (context) => const FilterPage()),
-  );
-}
-
 
   @override
   Widget build(BuildContext context) {

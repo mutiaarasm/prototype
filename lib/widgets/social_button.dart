@@ -24,7 +24,7 @@ class SocialButton extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: 128),
               blurRadius: 6,
               offset: const Offset(0, 4),
             ),

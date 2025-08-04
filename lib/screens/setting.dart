@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prototype/widgets/primary_button.dart';
 import 'package:prototype/widgets/secondary_button.dart';
 import '../constants/app_colors.dart';
-import '../widgets/bottomNavbar.dart';
+import '../widgets/bottom_navbar.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
